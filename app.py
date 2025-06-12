@@ -8,9 +8,9 @@ import numpy as np
 from PIL import Image
 
 # Cargar modelo y recursos
-modelo = joblib.load("modelo_var_nb (1).pkl")
-vectorizador = joblib.load("vectorizador_var (1).pkl")
-le = joblib.load("label_encoder_var (1).pkl")
+modelo = joblib.load("modelo_var_nb.pkl")
+vectorizador = joblib.load("vectorizador_var.pkl")
+le = joblib.load("label_encoder_var.pkl")
 
 # UI principal
 st.image("https://media.tenor.com/xOb4uwv-VV8AAAAC/var-checking.gif", use_container_width=True)
@@ -74,4 +74,5 @@ if st.button("🔍 Predecir decisión"):
 # Pie de página
 st.markdown("---")
 st.markdown('<div style="text-align: center; color: gray;">Desarrollado por LTELC - Consultoría en Datos e IA ⚙️</div>', unsafe_allow_html=True)
+
 
